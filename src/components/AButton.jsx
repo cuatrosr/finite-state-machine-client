@@ -15,7 +15,7 @@ const AButton = ({dataTable, machineType, handleDiagramData, alphabet, isDisable
                 setLoading(true)
                 const json = adapterFromClient(dataTable.rows, dataTable.columns, alphabet, machineType === 'Moore')
                 const headers = {'Content-Type': 'application/json'}
-                const response = await axios.post(`http://localhost:8080/machine/${machineType.toLowerCase()}/minimum`, json, {headers: headers})
+                const response = await axios.post(`https://finite-state-machine-server.herokuapp.com/machine/${machineType.toLowerCase()}/minimum`, json, {headers: headers})
                 setLoading(false)
                 handleDiagramData(adapterFromServer(response.data, machineType === 'Moore'))
                 enqueueSnackbar('Ve la maquina conexa y minimal abajo 👇', { variant: 'success' })
