@@ -8,7 +8,7 @@
 
 ## ***Instructions***📓
 
-*The user manual to use our web application can be found **[here](https://github.com/cuatrosr/finite-state-machine-client/tree/main/src/docs/User%20Manual.pdf)***
+*The user manual to use our web application can be found **[here](https://github.com/cuatrosr/finite-state-machine-client/blob/main/docs/User%20Manual.pdf)***
 
 ## ***Build With*** 🛠️
 
